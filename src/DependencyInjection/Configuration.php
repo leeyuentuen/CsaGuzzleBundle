@@ -29,7 +29,7 @@ class Configuration implements ConfigurationInterface
     /**
      * {@inheritdoc}
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder() : void
     {
         $treeBuilder = new TreeBuilder('csa_guzzle');
         if (method_exists($treeBuilder, 'getRootNode')) {
